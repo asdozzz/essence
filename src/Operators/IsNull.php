@@ -11,4 +11,9 @@ class IsNull extends AbstractStaticOperator
 	{
 		return NULL;
 	}
+
+    public static function setFilter($query,$filter)
+    {
+        return $query->whereNull($filter['colname']);
+    }
 }

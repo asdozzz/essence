@@ -9,7 +9,7 @@ class Like extends AbstractOperator
 
     public static function setFilter($query,$filter)
     {
-        return $query->where($filter['colname'],$filter['operator'],'%'.$filter['value'].'%');
+        return $query->where($filter['colname'],'like','%'.$filter['value'].'%');
     }
 
 }

@@ -9,8 +9,8 @@ class Yesterday extends AbstractStaticOperator
 	
 	public static function getValue($value)
 	{
-		$date = new DateTime();
-		$date->add(DateInterval::createFromDateString('yesterday'));
+		$date = new \DateTime();
+		$date->add(\DateInterval::createFromDateString('yesterday'));
 		return $date->format('Y-m-d');
 	}
 }

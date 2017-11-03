@@ -9,8 +9,8 @@ class Tomorrow extends AbstractStaticOperator
 	
 	public static function getValue($value)
 	{
-		$date = new DateTime();
-		$date->add(DateInterval::createFromDateString('tomorrow'));
+		$date = new \DateTime();
+		$date->add(\DateInterval::createFromDateString('tomorrow'));
 		return $date->format('Y-m-d');
 	}
 }

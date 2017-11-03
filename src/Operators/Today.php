@@ -9,7 +9,7 @@ class Today extends AbstractStaticOperator
 	
 	public static function getValue($value)
 	{
-		$now = new DateTime();
+		$now = new \DateTime();
 		return $now->format('Y-m-d');
 	}
 }
