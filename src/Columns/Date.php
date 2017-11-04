@@ -16,7 +16,7 @@ class Date extends \Asdozzz\Essence\Columns\Column
 	public $system             = false;
 	public $required           = false;
 	public $events             = [];
-	public $validation_rules   = 'date_format:Y-m-d';
+	public $validation_rules   = 'date_format:Y-m-d|nullable';
 	public $convertation_rules = array();
 
 	public function __construct()

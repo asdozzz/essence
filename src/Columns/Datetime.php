@@ -12,7 +12,7 @@ class Datetime extends \Asdozzz\Essence\Columns\Date
     public $format           = 'Y-m-d H:i:s';
 	public $name             = 'ДатаВремя';
 	public $data             = 'datetime';
-	public $validation_rules = 'date_format:Y-m-d H:i:s';
+	public $validation_rules = 'date_format:Y-m-d H:i:s|nullable';
 
     public function __construct()
     {

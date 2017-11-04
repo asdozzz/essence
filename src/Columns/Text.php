@@ -15,6 +15,6 @@ class Text extends \Asdozzz\Essence\Columns\Column
 	public $system             = false;
 	public $required           = false;
 	public $events             = [];
-	public $validation_rules   = 'string';
+	public $validation_rules   = 'string|nullable';
 	public $convertation_rules = [];
 }

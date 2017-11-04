@@ -14,7 +14,7 @@ class Floats extends \Asdozzz\Essence\Columns\Column
 	public $system           = false;
 	public $required         = false;
 	public $events           = [];
-	public $validation_rules = 'numeric';
+	public $validation_rules = 'numeric|nullable';
 
 	public $convertation_rules = array();
 

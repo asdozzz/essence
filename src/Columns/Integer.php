@@ -14,7 +14,7 @@ class Integer extends \Asdozzz\Essence\Columns\Column
 	public $system           = false;
 	public $required         = false;
 	public $events           = [];
-	public $validation_rules = 'integer';
+	public $validation_rules = 'integer|nullable';
 
 	public $convertation_rules = array();
 
