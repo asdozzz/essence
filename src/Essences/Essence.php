@@ -8,6 +8,9 @@ abstract class Essence implements \Asdozzz\Essence\Interfaces\iEssence
 {
     public $softDeletes   = false;
     public $deleted_field = '';
+    public $table;
+    public $label;
+    public $primary_key = 'id';
 
 	function __construct()
 	{
