@@ -7,7 +7,7 @@ class Deleted_at extends \Asdozzz\Essence\Columns\Datetime
 	public $name     = 'Дата и время удаления';
 	public $data     = 'deleted_at';
 	public $system   = true;
-	public $required = true;
+	public $required = false;
 	public $events   = array();
 
 	public function __construct()

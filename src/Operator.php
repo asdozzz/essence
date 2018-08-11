@@ -11,7 +11,7 @@ class Operator
 			throw new \Exception("Название класса не указано");
 		}
 
-		$config = \Config::get('essence.operators.'.$operator_alias);
+		$config = \Config::get('essence.operators.'.strtolower($operator_alias));
 
 		if (empty($config))
 		{

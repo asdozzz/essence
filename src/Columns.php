@@ -8,7 +8,7 @@ class Columns
 	{
 		if (empty($column))
 		{
-			throw new Exception("Название класса не указано");
+			throw new \Exception("Название класса не указано");
 		}
 
 		$config = \Config::get('essence.columns.'.$column);
@@ -22,9 +22,9 @@ class Columns
 
 		$interfaces = class_implements($config);
 
-		if (!isset($interfaces["Asdozzz\Essence\Interfaces\iColumn"]))
+		if (!isset($interfaces["Asdozzz\\Essence\\Interfaces\\iColumn"]))
 		{
-			throw new Exceptions\ColumnBadInstanceException("Class <<$config>> must implemenet Asdozzz\Essence\Interfaces\iColumn");
+			throw new Exceptions\ColumnBadInstanceException("Class <<$config>> must implemenet Asdozzz\\Essence\\Interfaces\\iColumn");
 		}
 
 		return $class;
